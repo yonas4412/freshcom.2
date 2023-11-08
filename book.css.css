@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+:root{
+    --text-color:#00fbff;
+    --bg-color:#323234;
+    --bg-coloe:#323234;
+    --white:#fff;@
+    --black:#000;
+    --mob-color:#444444;
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+ :root{
+     --text-color:#00fbff;
+     --bg-color:#323234;
+     --bg-coloe:#323234;
+     --white:#fff;
+     --black:#000;
+     --mob-color:#444444;
+  }
+  
+ header{
+     background: var(--bg-color);
+     height: 90px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius:50px ;
+     border: 6px solid var(--text-color);
+     box-shadow: 0 0 70px var(--text-color);
+ 
+ }
+ nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+ }
+ nav .logo{
+ z-index: 1;
+ font-size:60px ;
+ border-radius:50px ;
+ border: 6px solid var(--text-color);
+ box-shadow: 0 0 70px var(--text-color);
+ 
+ }
+ nav.logo  a{
+     text-decoration: none;
+     font-size: 40px;
+     font-weight:600 ;
+     color: var(--white) ;
+ }
+ 
+ span {
+     color: var(--text-color);
+ }
+ nav ul{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-size: 18px;
+    list-style: none;
+    z-index: 1;
+ }
+ nav ul li a{
+     color: #fa7e12;
+     text-decoration: none;
+ 
+     
+     transition: 0.4s ease;
+ }
+ nav ul li a:hover{
+     color: var(--text-color);
+ }
+ nav.hamburger{
+     position: relative;
+     width: 100px;
+     cursor: pointer;
+     appearance: none;
+     background: none;
+     outline: none;
+     border: none;
+     display: block;
+     scale:0.8 ;
+ }
+ nav.hamburger.bar,
+ nav.hamburger::after,
+ nav.hamburger::before
+ { content:'';
+     display: block;
+ width: 100%;
+ height: 6px;
+ background: #f18930;
+ margin: 12px 0;
+ transition: 0.4s;
+ }
+ nav.hamburger.active::before{
+     transform: rotate(-45deg) translate(-8px,-5px);
+ 
+ }
+ 
+     
+     nav.hamburger.active::after{
+         transform: rotate(45deg) translate(-8px,-5px);
+ 
+ }
+ nav.hamburger.active.bar{
+     opacity:0 ;
+ }.button.hamburger{
+     font-size: 20px;
+     font-weight: 600;
+     padding: 12px 24px;
+     border: radius 25px; 
+     color: var(--black);
+     background: var(--text-color);
+     border: 2px solid var(--text-color);
+ outline: none;
+ cursor: pointer;
+ transition: 0.5s ease-in;
+ border-radius:50px ;
+ border: 6px solid var(--text-color);
+ box-shadow: 0 0 70px var(--text-color);
+ 
+ }button:hover{
+     transform:translate(-5px) ;
+     color: var(--text-color); 
+     background-color: transparent;
+  
+  }
+ 
+ 
+  *,::after,::before{
+     box-sizing: border-box;
+  }
+  body{
+     font-family: sans-serif;
+     
+     background: var(--bg-color);
+     background-repeat: no-repeat;
+     
+ 
+ }
+  a{ cursor: pointer;
+     text-decoration: none;
+     font-family: sans-serif;
+  }
+  li{
+     list-style: none;
+  }
+ 
+ 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .wrapper{
+     font-family: 'poppins',sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: #69275c;
+     
+ }
+ .wrapper h1{
+     font-size: 3em;
+     border-radius:50px ;
+     border: 6px solid var(--text-color);
+     box-shadow: 0 0 70px var(--text-color);
+     
+     margin: 25px;
+ }
+ .content-box{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 1000px;
+     margin-top: 30px;
+ }
+ .card{
+     min-height: 120px;
+     width: 220px;
+     padding: 30px;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: #fff;
+     margin: 10px 4px;
+     box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+ }
+ .card i{
+     margin: 20px;
+     color: #581ed6;
+     
+ }
+ .card h2{
+     margin-bottom: 12px;
+     font-weight: 400;
+     text-align: center;
+ }
+ .card a{
+    font-size: 20px;
+    background: #fa7e12;
+    border-radius:50px ;
+     border: 6px solid var(--text-color);
+     box-shadow: 0 0 70px var(--text-color);
+     
+ }
+ .card p{
+     color: #6c757d;
+     text-align: center;
+ }
+ .card:hover i,
+ .card:hover p{
+     color: #fff;
+ }
+ .card:hover h2{
+     font-weight: 600;
+ }
+ .card:nth-child(1):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg.jpg');
+                                     background-size: cover;
+ }
+ .card:nth-child(2):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg2.jpg');
+                                     background-size: cover;
+ }
+ .card:nth-child(3):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg3.jpg');
+                                     background-size: cover;
+ }
+ .card:nth-child(4):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg4.jpg');
+                                     background-size: cover;
+ }
+ .card:nth-child(5):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg5.jpg');
+                                     background-size: cover;
+ }
+ .card:nth-child(6):hover{
+     background: linear-gradient(45deg,
+                                    rgba(88, 70, 159, 0.7) 0% ,
+                                    rgba(136, 113, 199, 0.7)100% ) ,
+                                     url('bg2.jpg');
+                                     background-size: cover;
+ }
+ @media(max-width:991px){
+     .wrapper{
+         padding: 25px;
+     }
+     .wrapper h1{
+         font-size: 2.5em;
+         font-weight: 600;
+     }
+     .content-box{
+         flex-direction: column;
+         width: 100%;
+     }
+     .card{
+         min-width: 300px;
+         margin: 10px auto;
+     }
+ }
